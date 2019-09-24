@@ -88,6 +88,7 @@ router.post("/register",function(req,res){
 
 router.post("/login",passport.authenticate("local",{
     successRedirect: "/campgrounds",
+    
     failureRedirect: "/campgrounds/login",
 }),function(req,res){  
 })
