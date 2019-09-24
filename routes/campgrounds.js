@@ -104,7 +104,9 @@ router.get("/logout",function(req,res){
     req.flash("success","your are logged out successfully!")
     res.redirect("/campgrounds")
 })
-
+router.get("/about",function(req,res){
+    res.render("campground/about.ejs");
+})
 
 router.get("/new",middleware.isLoggedIn,function(req,res){
     res.render("campground/new.ejs");
