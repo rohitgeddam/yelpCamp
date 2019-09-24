@@ -72,6 +72,11 @@ router.get("/login",function(req,res){
     res.render("campground/login.ejs")
 })
 
+router.get("/login/error",function(req,res){
+    req.flash("error","invalid credientials!");
+    res.redirect("/campgrounds/login")
+})
+
 router.post("/register",function(req,res){
     User.register(new User({username: req.body.username}),req.body.password,function(err,user){
         if(err){
@@ -89,7 +94,7 @@ router.post("/register",function(req,res){
 router.post("/login",passport.authenticate("local",{
     successRedirect: "/campgrounds",
     
-    failureRedirect: "/campgrounds/login",
+    failureRedirect: "/campgrounds/login/error",
 }),function(req,res){  
 })
 

@@ -12,6 +12,7 @@ var campgroundRoute = require("./routes/campgrounds");
 var commentRoute = require("./routes/comments")
 var methodOverride = require("method-override");
 var flash = require("connect-flash");
+var port = process.env.PORT;
 //database connect
 // mongoose.connect("mongodb://localhost:27017/yelp_camp",{useNewUrlParser:true, useUnifiedTopology: true })
 mongoose.connect("mongodb+srv://rohit:rohitharshit1@@cluster0-udfpj.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser: true ,useUnifiedTopology: true});
@@ -75,7 +76,7 @@ app.get("/",function(req,res){
 // }
 
 
-app.listen(process.env.PORT,()=>{
+app.listen(3000,()=>{
     console.log("server has started at port 3000.")
 })
 

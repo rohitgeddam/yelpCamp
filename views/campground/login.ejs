@@ -1,8 +1,24 @@
 <% include ../partials/header.ejs %>
-<h1>Login</h1>
 
-<form action="/campgrounds/login" method="post">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password"  placeholder="password">
-    <input type="submit" value="login" class="btn btn-primary">
-</form>
+
+
+
+<% include ../partials/header.ejs %>
+    <div class="container">
+        <h1 style="text-align:center;">Login</h1>
+        <div class="row">
+            <div style="width:30%; margin:25px auto">
+                    <form action="/campgrounds/login" method="post">
+                        <input type="text" name="username" placeholder="username">
+                        <input type="password" name="password"  placeholder="password">
+                        <input type="submit" value="login" class="btn btn-primary">
+                    </form>
+                    
+            <a href="/">go back</a>
+        </div>
+            
+        </div>
+
+    </div>
+
+    
