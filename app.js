@@ -76,7 +76,7 @@ app.get("/",function(req,res){
 // }
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("server has started at port 3000.")
 })
 
