@@ -6,9 +6,15 @@
         <div class="row">
             <div style="width:30%; margin:25px auto">
                     <form action="/campgrounds/register" method="post">
-                        <input type="text" name="username" placeholder="username">
-                        <input type="password" name="password"  placeholder="password">
-                        <input type="submit" value="register">
+                        <div class="form-group">
+                            <input  class="form-control"  type="text" name="username" placeholder="username">
+                        </div>
+                        <div class="form-group">
+                            <input  class="form-control" type="password" name="password"  placeholder="password">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="register"  class="btn btn-primary btn-block">
+                        </div>
                     </form>
                     
                     
