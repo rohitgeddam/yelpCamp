@@ -1,0 +1,24 @@
+.thumbnail img{
+    width:100%;
+}
+
+.thumbnail{
+    padding:0;
+}
+
+.thumbnail .caption-full{
+    padding:9px;
+}
+
+.thumbnail .descp{
+    padding:9px;
+}
+
+.more{
+    margin:4px 0 ;
+}
+
+#delete-btn{
+   display: inline-block;
+}
+
